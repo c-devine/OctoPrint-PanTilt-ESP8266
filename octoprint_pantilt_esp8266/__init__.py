@@ -64,12 +64,12 @@ class Pantilt_esp8266Plugin(octoprint.plugin.SettingsPlugin,
 
 				# version check: github repository
 				type="github_release",
-				user="you",
+				user="c-devine",
 				repo="OctoPrint-PanTilt-ESP8266",
 				current=self._plugin_version,
 
 				# update method: pip
-				pip="https://github.com/you/OctoPrint-PantTilt-ESP8266/archive/{target_version}.zip"
+				pip="https://github.com/c-devine/OctoPrint-PantTilt-ESP8266/archive/{target_version}.zip"
 			)
 		)
 
