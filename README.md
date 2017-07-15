@@ -28,7 +28,7 @@ or manually using this URL:
 ## Hardware
 
 The 2 axis servo gimbals can be found on ebay and other [online](https://www.google.com/search?q=ebay+Servo+Mount+bracket+pan+tilt+with+servos&oq=ebay+Servo+Mount+bracket+pan+tilt+with+servos)
- locations.  [Arduino Nanos](https://www.google.com/#q=Arduino+Nano+compatible+v3.0+5v+ATmega328p) are also pretty easy to find.
+ locations.  [ESP8266 development boards](https://www.google.com/search?q=NodeMcu+Lua+WIFI+development+board&oq=NodeMcu+Lua+WIFI+development+board&aqs=chrome..69i57j0l5.1282j0j8&sourceid=chrome&ie=UTF-8) are also pretty easy to find.
 
 3D Printed Part: [C270 Camera Mount Block](https://www.thingiverse.com/thing:2409919)
 
@@ -44,4 +44,31 @@ The [Firmware](https://github.com/c-devine/OctoPrint-PanTilt-ESP8266-Firmware) i
 
 ## Configuration
 
-**TODO:** Describe your plugin's configuration options (if any).
+### Setup ESP8266
+After installing the firmware, the ESP8266 should start up in AP mode - look for the network "wifipantiltAP" and connect to the access point to configure the hostname and other parameters.
+
+<img src="https://raw.githubusercontent.com/c-devine/OctoPrint-PanTilt-ESP8266/snapshots/assets/img/wifipantiltAP.png?raw=true">
+
+Once connected, you need to add the local network ssid and password, as well as set the host name for the device, in this case "wifipantilt" or another hostname.
+Open a web browser and connect to http://192.168.4.1/setup and configure the local network and hostname.
+
+
+<img src="https://raw.githubusercontent.com/c-devine/OctoPrint-PanTilt-ESP8266/snapshots/assets/img/wifipantiltAP-setup.png?raw=true">
+
+
+You can test connection to the network by connecting to it in a web-browser http://your-host-name
+
+
+<img src="https://raw.githubusercontent.com/c-devine/OctoPrint-PanTilt-ESP8266/snapshots/assets/img/wifipantilt-hello.png?raw=true" >
+
+### Setup PanTilt Plugin
+
+<img src="https://raw.githubusercontent.com/c-devine/OctoPrint-PanTilt-ESP8266/snapshots/assets/img/pantilt-plugin-settings.png?raw=true" >
+
+### Setup ESP8266 Plugin
+
+<img src="https://raw.githubusercontent.com/c-devine/OctoPrint-PanTilt-ESP8266/snapshots/assets/img/esp8266-plugin-settings.png?raw=true" >
+
+
+
+
