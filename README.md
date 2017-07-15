@@ -10,9 +10,8 @@ is controlled over wifi, and powered through the USB port. This plugin has had v
 ## Setup
 
 First, the base Octoprint-PanTilt plugin needs to be installed from here:
-https://github.com/c-devine/OctoPrint-PanTilt/archive/command-handler.zip
 
-see [command-handler topic](https://github.com/c-devine/OctoPrint-PanTilt/tree/command-handler)
+    https://github.com/Salandora/OctoPrint-PanTilt/archive/master.zip
 
 Then install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
